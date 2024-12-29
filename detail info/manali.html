@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manali</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      font-family: "poppins";
+    }
+
+    .header-image {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  color: white; /* Ensures the text is visible */
+  display: flex; /* Centers text */
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Optional for multi-line text */
+}
+
+.header-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('photos/m_Manali_1_l_658_1200.avif') no-repeat center/cover;
+  filter: brightness(0.5); /* Darkens the background image */
+  z-index: -1; /* Ensures the overlay is below the text */
+}
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 6rem;
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .content p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 0 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #007bff;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    .header-image div  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-image div h1{
+        font-size: 6rem;
+        color: #fff;
+        text-shadow:0 4px 8px rgba(0, 0, 0, 0.1); 
+        
+
+    }
+    
+    @media (max-width:748px){
+      .header-image div h1{
+        font-size: 3.2rem;
+        margin: 20px;
+      }
+
+      .content p{
+        font-size:0.9rem;
+      }
+
+    }
+
+
+  </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="header-image">
+    <div>
+    <h1>Manali</h1>
+  </div>
+  </div>
+
+  <div class="content">
+    
+    <p>
+        Manali, nestled in the stunning Himalayas, is a breathtaking blend of natural beauty and adventure. With snow-capped peaks, lush valleys, and serene rivers, it offers a perfect escape from the hustle of city life. Whether you're seeking thrilling activities like paragliding and trekking, or simply wishing to relax in the peaceful surroundings, Manali provides an unforgettable experience. The town’s charm is further enhanced by its vibrant culture, quaint markets, and scenic landscapes, making it a true paradise for travelers of all kinds.
+    </p>
+  </div>
+
+  <div class="gallery">
+    <img src="photos/m_Manali_1_l_658_1200.avif" alt="Lakshadweep Beach">
+    <img src="photos/m_Manali_2_l_658_1200.avif" alt="Lakshadweep Sunset">
+    <img src="photos/m_Manali_activity_adventure_l_499_768.avif" alt="Coral Reefs in Lakshadweep">
+    <img src="photos/m_Manali_activity_trekking_l_430_645.avif" alt="Boats in Lakshadweep">
+    <img src="photos/m_Manali_1_l_658_1200.avif" alt="Lagoon in Lakshadweep">
+  </div>
+
+  <footer>
+    &copy; 2024 Explore Manali | All Rights Reserved
+  </footer>
+</body>
+</html>
